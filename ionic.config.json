@@ -1,7 +1,0 @@
-{
-  "name": "celebri",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
