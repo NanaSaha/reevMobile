@@ -1,0 +1,18 @@
+<ion-content id="modal">
+  <ion-header>
+    <ion-navbar>
+      <ion-buttons end>
+        <button ion-button icon-only (tap)="dismiss()">
+          <ion-icon name="close"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  <video playsinline loop muted controls autoplay class="fullscreen-bg__video">
+    <source src="{{video_url}}" type="video/mp4" />
+  </video>
+
+  <!-- <div class="logo">
+    <img src="assets/imgs/reev.png" />
+  </div> -->
+</ion-content>

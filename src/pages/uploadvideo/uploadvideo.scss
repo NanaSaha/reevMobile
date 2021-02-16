@@ -1,0 +1,62 @@
+page-uploadvideo {
+  .direct_service_row {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    margin-bottom: 0%;
+  }
+
+  .column3 {
+    // background-color: #5dba47;
+    width: 50%;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 8px;
+    margin-left: 25%;
+    margin-bottom: 3%;
+    height: 170px;
+    background-color: white;
+  }
+
+  .border {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  ion-icon {
+    display: inline-block;
+    font-size: 4.7em;
+  }
+
+  #modal {
+    left: 7px !important;
+    top: 60% !important;
+    position: absolute !important;
+    display: block !important;
+    width: 96% !important;
+    height: 40% !important;
+    contain: strict !important;
+    border-radius: 10px;
+  }
+
+  #moveHeader {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .bar-button-default-ios,
+  .bar-button-default.bar-button-ios-default,
+  .bar-button-clear-ios-default {
+    color: #000000 !important;
+    background-color: transparent !important;
+    margin-right: 10px;
+    font-size: 26px;
+  }
+}

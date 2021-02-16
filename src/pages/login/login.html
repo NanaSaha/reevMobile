@@ -1,0 +1,60 @@
+<ion-content>
+  <ion-header>
+    <ion-navbar class="pad"> LOGIN</ion-navbar>
+  </ion-header>
+  <div class="fullscreen-bg">
+    <video playsinline loop muted autoplay class="fullscreen-bg__video">
+      <source src="assets/imgs/reevr.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="direct_row">
+    <div class="column_div">
+      <div class="border">
+        <ion-item no-lines>
+          <!-- <ion-label floating>Username</ion-label> -->
+          <ion-input type="text" placeholder="Username"> </ion-input>
+        </ion-item>
+        <br />
+        <ion-item no-lines>
+          <!-- <ion-label floating>Username</ion-label> -->
+          <ion-input type="text" placeholder="Password"> </ion-input>
+        </ion-item>
+
+        <br />
+
+        <!-- <p>{{ userData | json }}</p> -->
+        <!-- <button
+          ion-button
+          color="primary"
+          outline
+          icon-end
+          class="button button-dark customBtn"
+          (click)="login()"
+        >
+          Login
+        </button> -->
+
+        <button
+          ion-button
+          color="primary"
+          outline
+          icon-end
+          class="button button-dark customBtn"
+          (click)="login()"
+        >
+          Login
+        </button>
+
+        <br />
+        <p>
+          <span style="color: rgb(230, 17, 17)">
+            <a tappable (tap)="reset()" style="color: rgba(238, 26, 26, 0.836)"
+              >Forgot Password? <span><u>Request Now</u></span></a
+            >
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</ion-content>
