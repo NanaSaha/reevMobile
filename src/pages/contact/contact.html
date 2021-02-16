@@ -1,17 +1,83 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
+    <ion-title> Profile </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-content class="background">
+  <div class="back_body">
+    <div class="direct_row">
+      <div class="column_div">
+        <div id="round">
+          <img
+            src="https://res.cloudinary.com/sahanana/image/upload/v1591884675/Serapty-Reev/_1__blue_heart__640_X_640_evirvq.jpg"
+            class="round_image"
+          />
+        </div>
+
+        <div class="textline">
+          <h3 id="textprof">Collins Rawlings</h3>
+          <p id="textprof2">test@gmail.com</p>
+        </div>
+
+        <div class="border">
+          <button
+            ion-button
+            color="primary"
+            outline
+            icon-end
+            class="button button-dark customBtn"
+            (click)="login()"
+          >
+            Edit Profile
+          </button>
+          <br />
+        </div>
+
+        <div class="direct_row2">
+          <div class="column6">
+            <div class="border" tappable (tap)="meals()">
+              <!-- <img src="assets/imgs/catering.svg" class="img_size" /> -->
+              <ion-icon name="infinite"></ion-icon>
+
+              <figcaption>
+                <b id="txtcolor">Invite Friends</b>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="column6">
+            <div class="border" tappable (tap)="food()">
+              <!-- <img src="assets/imgs/groce3.png" class="img_size" /> -->
+              <ion-icon name="lock"></ion-icon>
+              <figcaption>
+                <b id="txtcolor">Security & Privacy</b>
+              </figcaption>
+            </div>
+          </div>
+          <div class="column6">
+            <div class="border" tappable (tap)="meals()">
+              <!-- <img src="assets/imgs/catering.svg" class="img_size" /> -->
+              <ion-icon name="alert"></ion-icon>
+
+              <figcaption>
+                <b id="txtcolor">Terms of Service</b>
+              </figcaption>
+            </div>
+          </div>
+
+          <div class="column6">
+            <div class="border" tappable (tap)="food()">
+              <!-- <img src="assets/imgs/groce3.png" class="img_size" /> -->
+
+              <ion-icon name="log-out"></ion-icon>
+              <figcaption>
+                <b id="txtcolor">Logout</b>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

@@ -1,0 +1,69 @@
+page-payments {
+  .background {
+    // background-size: cover;
+    // text-align: center;
+    // height: 100%;
+    background-image: -webkit-linear-gradient(260deg, #45ffff 30%, #000 0%);
+  }
+
+  .button.customBtn {
+    width: 80%;
+    text-align: center;
+  }
+
+  .toolbar-background-md {
+    border-color: #b2b2b2;
+    background: transparent !important;
+  }
+
+  ion-icon {
+    display: inline-block;
+    font-size: 1.2em;
+    color: white;
+  }
+
+  .item-md .item-ios p {
+    color: white !important;
+  }
+
+  .card-md,
+  .card-ios {
+    margin: 10px;
+    border-radius: 9px;
+    width: calc(100% - 20px);
+    font-size: 1.4rem;
+    background: #1c1c1c !important;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .card-md .card-ios p {
+    margin: 0 0 2px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: rgb(255, 249, 249) !important;
+  }
+
+  .item-md,
+  .item-ios {
+    color: white;
+    background-color: #1c1c1c;
+  }
+
+  .card-md p {
+    color: white;
+  }
+
+  .card-ios p {
+    margin: 0 0 2px;
+    font-size: 1.4rem;
+    color: white;
+  }
+
+  .toolbar-background-ios {
+    background: transparent;
+  }
+}
