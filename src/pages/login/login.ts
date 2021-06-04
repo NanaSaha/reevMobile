@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
-// import { GooglePlus } from '@ionic-native/google-plus';
+ import { GooglePlus } from '@ionic-native/google-plus';
 
 
 
@@ -13,18 +13,63 @@ export class LoginPage {
   loader;
   
   userData: any = {};
+   displayName: any;
+  email: any;
+  familyName: any;
+  givenName: any;
+  userId: any;
+  imageUrl: any;
+  token;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,private loadingCtrl: LoadingController) {
+  isLoggedIn:boolean = false;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,private loadingCtrl: LoadingController, private googlePlus: GooglePlus) {
   }
 
   // ,  private googlePlus: GooglePlus
 
 
-  // googleSignIn() {
+  googleSignIn() {
   //   this.googlePlus.login({})
   //     .then(result => this.userData = result)
   //     .catch(err => this.userData = `Error ${JSON.stringify(err)}`);
   // }
+
+
+  this.googlePlus.login({})
+      .then(res => {
+        console.log(res);
+        this.displayName = res.displayName;
+        this.email = res.email;
+        this.familyName = res.familyName;
+        this.givenName = res.givenName;
+        this.userId = res.userId;
+        this.imageUrl = res.imageUrl;
+        this.token = res.accessToken;
+
+        this.isLoggedIn = true;
+      })
+    .catch(err => console.error(err));
+
+}
+      
+
+
+    logout() {
+    this.googlePlus.logout()
+      .then(res => {
+        console.log(res);
+        this.displayName = "";
+        this.email = "";
+        this.familyName = "";
+        this.givenName = "";
+        this.userId = "";
+        this.imageUrl = "";
+
+        this.isLoggedIn = false;
+      })
+      .catch(err => console.error(err));
+  }
 
   showLoader() {
     // this.loader = this.loadingCtrl.create({
@@ -51,9 +96,9 @@ export class LoginPage {
   }
 
   login() {
-      this.showLoader()
+      //this.showLoader()
     this.navCtrl.setRoot("TabsPage")
-    this.loader.dismiss();
+    // this.loader.dismiss();
   }
 
 

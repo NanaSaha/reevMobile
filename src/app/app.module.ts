@@ -14,7 +14,7 @@ import { FileTransfer } from '@ionic-native/file-transfer';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-// import { GooglePlus } from '@ionic-native/google-plus';
+ import { GooglePlus } from '@ionic-native/google-plus';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
      Camera,
     File,
     FileTransfer,
-    // GooglePlus,
+    GooglePlus,
     
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

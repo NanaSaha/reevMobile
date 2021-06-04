@@ -3,7 +3,13 @@
     <img src="assets/imgs/reev.png" />
   </div>
   <div class="fullscreen-bg">
-    <video playsinline loop muted autoplay class="fullscreen-bg__video">
+    <video
+      playsinline
+      loop
+      [muted]="'muted'"
+      autoplay
+      class="fullscreen-bg__video"
+    >
       <source src="assets/imgs/reev1.mp4" type="video/mp4" />
 
       <!-- <source
